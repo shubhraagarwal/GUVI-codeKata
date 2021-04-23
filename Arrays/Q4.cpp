@@ -25,7 +25,10 @@ int main(){
 
         }
         if(!flag){
-            cout<<"0 ";
+            if(i > 0){
+                cout<<" ";
+            }
+            cout<<"0";
         }
 
         
