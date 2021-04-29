@@ -1,17 +1,15 @@
 #include <iostream>
 
-using namespace std ;
+using namespace std;
 
-int main(){
+int main()
+{
     string s;
-    cin>>s;
-    for(int i = s.length() ;  i >=0 ; i-- ){
-        if( i == s.length()){
-            s[i] = toupper(s[i]);
-            cout<<s.length();
-        }
-        else{
-        cout<<s[i];
-        }
-    }
+    cin >> s;
+    int x = s.length();
+    putchar(toupper(s[x - 1]));
+    for (int i = x - 2; i >= 0; i--)
+        cout << s[i];
+
+    return 0;
 }
